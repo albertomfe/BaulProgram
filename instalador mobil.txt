@@ -1,0 +1,11 @@
+script.js //definicion de proyecto
+sw  //service wworker
+manifest.json //manifiesto
+
+
+ftp
+ftp.baulprogram.com.mx
+usr
+albertomfe
+pass
+j0y6Ic+0vlys

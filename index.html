@@ -1,0 +1,794 @@
+  <!DOCTYPE html>
+  <html lang='es' dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="description" content="Servicios Web">
+      <meta name="author" content="Manuel Alberto Flores Esparza">
+	    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+      <title>BaulProgram</title>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Iconos materialize -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Animated -->
+      <link type="text/css" rel="stylesheet" href="css/animate.css"  media="screen,projection"/>
+      <!-- otros estilos-->
+      <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+
+      <meta name="theme-color" content="#FF1744">
+    	<meta name="MobileOptimized" content="width">
+    	<meta name="HandheldFriendly" content="true">
+      <!--
+      <link rel="shortcut  icon" href="img/favicon.png" type="image/x-icon"/>
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    	<link rel="shortcut icon" type="image/png" href="img/android-icon-192x192.png">
+    	<link rel="apple-touch-icon" href="img/apple-icon.png">
+    	<link rel="apple-touch-startup-image" href="img/android-icon-192x192.png">
+      -->
+    	<link rel="manifest" href="./manifest.json">
+
+
+     <meta property="og:url"           content="http://baulprogram.com.mx/" />
+     <meta property="og:type"          content="BaulProgram" />
+     <meta property="og:title"         content="BaulProgram" />
+     <meta property="og:description"   content="BaulProgram tiene como objetivo Plasmar Las Ideas de terceros para cumplir sus Objetivos y alcansar sus metas , de la manera mas Eficaz ,elegante y profesional. en tiempo y forma" />
+     <meta property="og:image"         content="http://baulprogram.com.mx/img/logo.png" />
+
+
+    </head>
+
+    <body>
+      <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v3.2'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
+
+
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="1205639302935223"
+        theme_color="#C2185B"
+        logged_in_greeting="Hola en que podemos Ayudarte?"
+        logged_out_greeting="Hola en que podemos Ayudarte?">
+      </div>
+
+
+
+
+
+
+
+		<nav class="nav-extended pink darken-2 wow animated bounceInDown">
+			<div class="nav-wrapper">
+			  <a href="#" class="brand-logo">Baul<span class='texto_verde_agua'>P</span>rogram</a>
+			  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			  <ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a target='_blank' href="https://neubox.com/af/baulprogram">Hospedaje Web</a></li>
+				<!--<li><a href="#Portafolio">Protafolio</a></li>-->
+				<li><a href="">Carrito</a></li>
+			  </ul>
+			</div>
+			<div class="nav-content">
+			  <ul class="tabs tabs-transparent">
+  				<li class="tab"><a  class="active" >Inicio</a></li>
+  				<li class="tab"><a class="waves-effect waves-light modal-trigger" href="#modal_equipo" >Equipo</a></li>
+  				<li class="tab"><a class="waves-effect waves-light modal-trigger" href="#modal_servicios">Servicios</a></li>
+  				<li class="tab"><a href="mailto:albertomfe@gmail.com?Subject=BaulProgram" target="_top" >Contacto</a></li>
+			  </ul>
+			</div>
+		  </nav>
+
+
+      <!-- Modal Structure -->
+        <div id="modal_equipo" class="modal">
+          <div class="modal-content">
+            <h4>Nuestro Equipo de Trabajo</h4>
+
+            <ul class="collection">
+            <li class="collection-item avatar">
+              <span class="title">Manuel Alberto Flores</span>
+              <p>Ingeniero en Computación<br>
+                 Desarrollador
+              </p>
+            </li>
+            <li class="collection-item avatar">
+              <span class="title">Gema Rios</span>
+              <p>Contadora<br>
+                 Administradora
+              </p>
+            </li>
+            <li class="collection-item avatar">
+              <span class="title">Angel Ramirez</span>
+              <p>Desarrollador <br>
+                 Especialista En Base de Datos
+              </p>
+            </li>
+            <li class="collection-item avatar">
+              <span class="title">Néstor Salvador Real González</span>
+              <p>
+                 Ingeniero en Computación
+                 <br />
+                 Analista de redes e IT
+              </p>
+            </li>
+          </ul>
+
+
+
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+          </div>
+    </div>
+
+
+    <div id="modal_servicios" class="modal">
+      <div class="modal-content">
+        <h4>Servicios</h4>
+
+        <ul class="collection">
+        <li class="collection-item avatar">
+          <span class="title">Paginas Web</span>
+          <p>
+            Estaticas
+            <br>
+            Dinamicas
+            <br />
+            Responsivas
+            <br />
+            PWA
+            <br />
+            CRM
+            <br />
+            ERP
+            <br />
+            Analisis de Datos
+          </p>
+        </li>
+      </ul>
+
+
+
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      </div>
+    </div>
+
+
+
+
+
+
+		  <ul class="sidenav" id="mobile-demo">
+         <li>
+            <div class="user-view">
+                <img src="img/logo.png">
+            </div>
+          </li>
+    			<li><a target='_blank' href="https://neubox.com/af/baulprogram">Hospedaje Web</a></li>
+    			<!--<li><a href="#Portafolio">Portafolio</a></li>-->
+    			<li><a href="">Carrito</a></li>
+		  </ul>
+
+		<!--Paralax -->
+		<div class="parallax-container valign-wrapper wow animated bounceInRight ">
+		  <div class="parallax"><img src="img/fondo.jpg"></div>
+
+        <span class='encima-todo'>
+          "La imaginación es el principio de la creación.  Imaginas lo que deseas, persigues lo que imaginas y finalmente, creas lo que persigues".
+            <br>
+            <center>(George Bernard Shaw)</center>
+        </span>
+
+		</div>
+
+
+
+
+	<div class="row contenedor marge-abajo wow animated bounceInLeft" >
+
+			<h2 class="center-align texto_welcome"><span class='texto_verde_agua'>B</span>aul<span class='texto_verde_agua'>P</span>rogram</h2>
+			<p class="center-align">BaulProgram tiene como objetivo Plasmar Las Ideas de terceros para cumplir sus Objetivos y alcansar sus metas , de la manera mas Eficaz ,elegante y profesional. en tiempo y forma</p>
+	</div>
+
+
+
+  <center>
+    <div class="fb-share-button" data-href="http://baulprogram.com.mx/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbaulprogram.com.mx%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
+  </center>
+
+
+  <!-- presentacion -->
+  <div class="row marge-abajo wow animated bounceInUp">
+
+      <h3 class='center-align subtitulo'>Misión,Visión y Valores</h3>
+
+      <div class="col s12 m4">
+        <div class="center promo promo-example">
+          <i class="large material-icons">brightness_high</i>
+          <p class="promo-caption titulo_mvv">Misión</p>
+          <p class="light center">
+              Comprometidos a crear Paginas Web Innovadoras Practicas y Accesibles adecuadas a las necesidades de todo negocio 100% Seguras.
+          </p>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="center promo promo-example">
+          <i class="large material-icons">brightness_5</i>
+          <p class="promo-caption titulo_mvv">Visión</p>
+          <p class="light center">
+            Ser Una Empresa Lider en el Desarrollo de Paginas y Aplicaciones Web, mejorando siempre la calidad de nuestros servicios
+            y crecer en los diferentes Ambitos (Personas,Beneficios y Productividad)
+          </p>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="center promo">
+          <i class="large material-icons">brightness_6</i>
+          <p class="promo-caption titulo_mvv">Valores</p>
+          <p class="light center">Humildad y Voluntad Orientandonos a Resultados para obtener Superacion en base a nuestro trabajo en Equipo y Honestidad.</p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <div class="row wow animated bounceInRight">
+
+      <h3 class='center-align subtitulo'>Paginas Web</h3>
+
+      <div class="col s12 m4">
+        <div class="card pink darken-2">
+          <div class="card-content white-text">
+            <span class="card-title center-align">Paginas Web Estaticas</span>
+            <p>
+                Una página web estática es un sitio diseñado con la finalidad de transmitir un mensaje en un solo sentido, sin la posibilidad de que interactúen los usuarios. Las páginas web estáticas son funcionales para casos en los que sólo se requiere plasmar información en internet (como un triptico o folleto virtual
+            </p>
+            <br />
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="card pink darken-2">
+          <div class="card-content white-text">
+            <span class="card-title center-align">Paginas Web Dinamicas</span>
+            <p>
+                Una página web dinámica es un sitio diseñado con la finalidad de transmitir un mensaje y recibir o captar información de los usuarios que interactúan con la página. Las páginas web dinámicas son funcionales para casos en lo que se realizan cambios constantes en el contenido, se recaba automáticamente información de los usuarios en bases de datos o se desea crear un sitio autoadministrable.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="card pink darken-2">
+          <div class="card-content white-text">
+            <span class="card-title center-align">Tiendas en Linea</span>
+            <p>
+                Es un sitio web o página web creada con la finalidad de comercializar productos a través de la internet. La constitución básica de una tienda en línea es presentar un catálogo de los productos compuesto por las ilustraciones y características o especificaciones de los mismos. Como el objetivo es vender por la web, una tienda virtual debe tener un sistema confiable con el cual se pueda realizar pagos electrónicos, con tarjeta de crédito, transferencias electrónicas o algún otro sistema seguro.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+  <!-- Cartas Msion Vision -->
+  <div class="row marge-abajo" >
+
+    <h3 class='center-align subtitulo'>Paquetes Web</h3>
+    <h4 class='center-align subtitulo'>Por que tu negocio debe tener una Pagina Web?</h4>
+
+    <div class='margenes'>
+      <p class='justify-align'>
+      En la actualidad la supervivencia y el éxito de los negocios depende en gran parte de las tecnologías que utilizan y a su presencia en el universo web.
+      <br />
+      En la actualidad, tener una página web nos brinda credibilidad ante los clientes potenciales y nos ayuda a ser visibles en los buscadores, de ahí la importancia de crear una estructura en la que el contenido resulte relevante. Considera que muchas visitas a tu sitio serán de personas que no conocen tu marca, incluye su ubicación física, número telefónico, mail de contacto y/o redes sociales, así como fotografías de alta calidad de tus productos.
+      </p>
+    </div>
+
+
+
+    <!-- Tecnologias -->
+    <div class="row marge-abajo">
+        <div class="col s6 m2">
+          <div class="center promo promo-example">
+            <i class="large material-icons blue-text text-darken-1">accessibility</i>
+              <p class="promo-caption">Accesibilidad</p>
+          </div>
+        </div>
+
+        <div class="col s6 m2">
+          <div class="center promo">
+            <i class="large material-icons  blue-text text-darken-1">aspect_ratio</i>
+              <p class="promo-caption">Adaptable a Dispositivos Mobiles</p>
+          </div>
+        </div>
+        <div class="col s6 m2">
+          <div class="center promo">
+            <i class="large material-icons  blue-text text-darken-1">add_location</i>
+              <p class="promo-caption">Posicionamiento Web</p>
+          </div>
+        </div>
+
+        <div class="col s6 m2">
+          <div class="center promo">
+            <i class="large material-icons  blue-text text-darken-1">art_track</i>
+              <p class="promo-caption">Paginas Administrables</p>
+          </div>
+        </div>
+      <div class="col s6 m2">
+          <div class="center promo">
+            <i class="large material-icons  blue-text text-darken-1">build</i>
+              <p class="promo-caption">Soporte</p>
+          </div>
+      </div>
+        <div class="col s6 m2">
+          <div class="center promo">
+            <i class="large material-icons  blue-text text-darken-1">trending_up</i>
+              <p class="promo-caption">Optimizadas</p>
+          </div>
+        </div>
+
+
+  </div>
+
+
+
+
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img class='img-paquete' src="img/paquete1.png">
+        </div>
+        <div class="card-content ">
+          <span class="card-title">Paquete Web Micro</span>
+          <span class='precio-paquete'>$ 3,500.</span>
+          <p>
+            Para una rápida presencia en internet a un costo muy accesible, incluye dominio y hosting
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img class='img-paquete' src="img/paquete2.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title">Paquete Web Empresarial</span>
+          <span class='precio-paquete'>$ 6,000.</span>
+          <p>Para emprendedores que estan iniciando y requieren un sitio profesional para moviles.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img class='img-paquete' src="img/paquete3.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title">Paquete de Negocios</span>
+          <span class='precio-paquete'>$ 8,500.</span>
+          <p>
+            Una solución ideal para pequeñas empresas, incluye certificado SSL y tecnología "Call to action"
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img class='img-paquete' src="img/paquete4.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title">Paquete Web Auto administrable</span>
+          <span class='precio-paquete'>$ 10,400.</span>
+          <p>
+            Una solución ideal para el que requiere modificar constantemente el contenido.
+            con sus propios modulos para subir y administrar su informacion.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col s12 m4 ">
+      <div class="card">
+        <div class="card-image">
+          <img class='img-paquete' src="img/paquete5.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title">Paquete Corporativo</span>
+          <span class='precio-paquete'>Por Cotización</span>
+          <p>
+            Totalmente a la medida de sus necesidades, una pagina moderna y de excelente diseño,
+            con funciones especificas para el giro de su negocio.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4 ">
+      <div class="card">
+        <div class="card-image">
+          <img class='img-paquete' src="img/androidapp.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title">Aplicaciónes móviles</span>
+          <span class='precio-paquete'>Por Cotización</span>
+          <p>
+            Totalmente a la medida de sus necesidades, una pagina moderna y de excelente diseño,
+            con funciones especificas para el giro de su negocio.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <!-- Componente de una Web -->
+  <div class="row marge-abajo ">
+
+    <h3 class='center-align subtitulo'>Componentes de una Web</h3>
+
+    <div class='col s12 '>
+      <ul class="collection">
+
+        <li class="collection-item avatar">
+          <i class="material-icons circle">menu</i>
+          <span class="title">Menu:</span>
+          <p>
+            Un buen sistema de navegación es imprescindible en toda página web. Es una parte importante de la organización de la estructura de la web.<br />
+            permite que los usuarios puedan seleccionar la parte de nuestro sitio que desean visitar.
+          </p>
+          <a  class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+
+        <li class="collection-item avatar">
+          <i class="material-icons circle">filter</i>
+          <span class="title">Galeria Web</span>
+          <p>La idea de una galería online es publicar, exhibir y difundir tu trabajo ya sea para ser contratado por clientes o para simplemente dar a conocer tus fotografías.
+            Esta es la principal importancia de tener una galería online: es lo que te permitirá ser reconocido,
+            ofrecerle un pedazo de tu arte a todos los cibernautas y potenciales empleadores.
+          </p>
+          <a class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+
+        <li class="collection-item avatar">
+          <i class="material-icons circle green">burst_mode</i>
+          <span class="title">Contenido</span>
+          <p>
+            Una página web debe ser atractiva… Pero no solo a la vista, sino también en el contenido.
+            Eso significa que debe tener contenido interesante que atraiga al público objetivo.
+            De hecho, ninguna página puede considerarse exitosa si no cuenta con un contenido atractivo y actualizado con cierta frecuencia.
+            Eso servirá no solo para aumentar el número de nuevas visitas, sino para que los antiguos visitantes consulten la página a menudo y la usen como referencia.
+          </p>
+          <a class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+
+
+        <li class="collection-item avatar">
+          <i class="material-icons circle red">brightness_auto</i>
+          <span class="title">Tipografía.</span>
+          <p>
+            Es importante usar fuentes llamativas pero sencillas de leer.
+            También es importante variar el tamaño de una misma fuente para resaltar secciones interesantes del contenido y del texto.
+          </p>
+          <a class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+
+        <li class="collection-item avatar">
+          <i class="material-icons circle red">apps</i>
+          <span class="title">Botones</span>
+          <p>
+            Utilizar botones prácticos y representativos, así como iconos grandes y vistosos aumenta la facilidad de navegación en la página.
+          </p>
+          <a class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+
+
+        <li class="collection-item avatar">
+          <i class="material-icons circle red">clear_all</i>
+          <span class="title">Animaciones y movimiento.</span>
+          <p>
+            Para generar una sensación de dinamismo es bueno utilizar elementos animados.
+            Pero atención: no abuses de ellos, ya que pueden sobrecargar la página.
+            Lo ideal es que no sobrepasen el 20% del total de la página ya que de otra forma pueden causar saturación, distraer la atención de cosas importantes que se quieren decir y por último sacar al usuario del sitio.
+          </p>
+          <a class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+
+        <li class="collection-item avatar">
+          <i class="material-icons circle red">format_paint</i>
+          <span class="title">Fondos</span>
+          <p>
+            Los fondos claros o totalmente blancos facilitan la visualización, pero también dan un aspecto despejado a la página resaltando las imágenes.
+            <br />
+            Existe la tendencia a utilizar fondos negros para lecturas largas, para no cansar al lector con la luz del monitor.
+          </p>
+          <a class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+
+        <li class="collection-item avatar">
+          <i class="material-icons circle red">share</i>
+          <span class="title">Redes Sociales</span>
+          <p>
+          Es de gran ayuda para los usuarios colocar enlaces a redes sociales con las cuales interactúan con facilidad. Esto ayuda además a crear comunidad.
+          </p>
+          <a class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+
+        <li class="collection-item avatar">
+          <i class="material-icons circle red">visibility</i>
+          <span class="title">Sobriedad</span>
+          <p>
+          Una página debe permitir una fácil visualización de los contenidos (vídeos, imágenes, textos).
+          Tener en cuenta todo eso a la hora de optar por el diseño web es garantía de éxito.
+          </p>
+          <a class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+  </div>
+
+
+
+
+  <div class="row contenedor">
+     <div class="col s12">
+       <ul class="tabs">
+         <li class="tab col s3"><a href="#test1">Aplicaciones Web</a></li>
+         <li class="tab col s3"><a class="active" href="#test2">Ventajas de una Aplicacion Web</a></li>
+         <li class="tab col s3"><a href="#test3">Uso Empresarial</a></li>
+       </ul>
+     </div>
+     <div id="test1" class="col s12">
+       <p>
+         Las aplicaciones web son populares debido a lo práctico del navegador web como cliente ligero, a la independencia del sistema operativo, así como a la facilidad para actualizar y mantener aplicaciones web sin distribuir e instalar software a miles de usuarios potenciales. Existen aplicaciones como los correos web, wikis, blogs, tiendas en línea y la propia Wikipedia que son ejemplos bastante conocidos de aplicaciones web.
+        <br><br>
+        Las aplicaciones Web pueden tener numerosos usos tanto para los visitantes como para los ingenieros de desarrollo, entre otros:
+        Permitir a los usuarios localizar información de forma rápida y sencilla en un sitio Web en el que se almacena gran cantidad de contenido.
+        <br><br>
+        Recoger, guardar y analizar datos suministrados por los visitantes de los sitios.
+        En el pasado, los datos introducidos en los formularios HTML se enviaban como mensajes de correo electrónico a los empleados o a aplicaciones CGI para su procesamiento. Una aplicación Web permite guardar datos de formularios directamente en una base de datos, además de extraer datos y crear informes basados en la Web para su análisis. Ejemplos de ello son las páginas de los bancos en línea, las páginas de tiendas en línea, las encuestas y los formularios con datos suministrados por el usuario.
+       </p>
+     </div>
+     <div id="test2" class="col s12">
+      <b>Ahorra tiempo:</b> se pueden realizar tareas sencillas sin necesidad de descargar ni instalar ningún programa.
+      <br>
+      <b>Compatibilidad:</b> basta tener un navegador actualizado para poder utilizarlas.
+      <br>
+      <b>Espacio:</b> no ocupan espacio en nuestro disco duro.
+      <br>
+      <b>Actualizaciones inmediatas:</b> como el software lo gestiona el propio desarrollador, cuando nos conectamos estamos usando siempre la última versión que haya lanzado.
+      <br>
+      <b>Consumo de recursos bajo:</b> dado que toda (o gran parte) de la aplicación no se encuentra en nuestra computadora, muchas de las tareas que realiza el software no consumen recursos nuestros porque se realizan desde otra computadora.
+      <br>
+      <b>Multiplataforma:</b> se pueden usar desde cualquier sistema operativo porque solamente es necesario tener un navegador.
+      <br>
+      <b>Portables:</b> es independiente de la computadora donde se utilice (PC de sobremesa, portátil) porque se accede a través de una página web (solamente es necesario disponer de acceso a Internet). La reciente tendencia al acceso a las aplicaciones web a través de teléfonos móviles requiere sin embargo un diseño específico de los ficheros CSS para no dificultar el acceso de estos usuarios.
+      <br>
+      <b>Disponibilidad:</b> suele ser alta porque el servicio se ofrece desde múltiples localizaciones para asegurar la continuidad del mismo.
+      <br>
+      <b>Colaboración:</b> gracias a que el acceso al servicio se realiza desde una única ubicación es sencillo el acceso y compartición de datos por parte de varios usuarios. Tiene mucho sentido, por ejemplo, en aplicaciones en línea de calendarios u oficina.
+      <br>
+      <b>Aumento de funcionalidades:</b> los navegadores ofrecen cada vez más y mejores funcionalidades para crear aplicaciones web enriquecidas.
+
+     </div>
+     <div id="test3" class="col s12">
+       <p>
+         Una estrategia que está emergiendo para las empresas proveedoras de software consiste en proveer acceso vía web a la aplicación. Para aquellas previamente distribuidas, como los programas de escritorio, se puede optar por desarrollar una aplicación totalmente nueva o simplemente por adaptar la aplicación para ser usada con una interfaz web. Estos últimos programas permiten al usuario pagar una cuota mensual o anual para usar la aplicación, sin necesidad de instalarla en la computadora del usuario. A esta estrategia de uso se la denomina Software como servicio y a las compañías desarrolladoras se les denomina proveedores de servicios de aplicación , un modelo de negocio que está atrayendo la atención de la industria del software.
+       </p>
+     </div>
+   </div>
+
+
+
+   <div class="row contenedor">
+      <div class="col s12" id='Portafolio'>
+            <h3 class='center-align subtitulo'>Portafolio</h3>
+
+            <div class="carousel">
+              <a class="carousel-item" href="#one!"><img class='img_acrrusel' src="./portafolio/boutique.png"></a>
+              <a class="carousel-item" href="#two!"><img src="./portafolio/gih.png"></a>
+              <a class="carousel-item" href="#three!"><img src="./portafolio/globalizador.png"></a>
+              <a class="carousel-item" href="#four!"><img src="./portafolio/unigornio.png"></a>
+              <a class="carousel-item" href="#five!"><img src="./portafolio/uvaboutique.png"></a>
+              <a class="carousel-item" href="#six!"><img src="./portafolio/viajes_del_sol.png"></a>
+              <a class="carousel-item" href="#sev!"><img src="./portafolio/feedback.png"></a>
+              <a class="carousel-item" href="#sev!"><img src="./portafolio/blog.png"></a>
+            </div>
+
+
+      </div>
+    </div>
+
+
+
+
+     <div class="parallax-container">
+       <div class="parallax"><img src="img/fondo2.jpg"></div>
+     </div>
+
+
+
+
+
+
+
+
+   <!-- Botones Redes Sociales-->
+
+   <div class="fixed-action-btn active">
+        <a class="btn-floating btn-large pulse red">
+        <i class="large material-icons">share</i>
+        </a>
+        <ul>
+        <li><a class="btn-floating red"><i class="fa fa-google"></i></a></li>
+        <li><a class="btn-floating red darken-1"><i class="fa fa-pinterest"></i></a></li>
+        <li><a class="btn-floating blue"><i class="fa fa-twitter"></i>"></i></a></li>
+        <li><a target='_blank' href='https://www.facebook.com/BaulProgram/?modal=admin_todo_tour' class="btn-floating blue"><i class="fa fa-facebook"></i></a></li>
+        </ul>
+   </div>
+
+
+
+
+
+
+
+  <div class="fb-comments" data-href="https://www.facebook.com/BaulProgram-1205639302935223/?modal=admin_todo_tour" data-width="100%" data-numposts="10"></div>
+
+
+
+
+
+
+	 <footer class="page-footer red accent-3">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="footer_text ">Baul<span class='texto_verde_agua'>P</span>rogram</h5>
+                <p class="grey-text text-lighten-4">
+                  La creatividad viene de un conflicto de ideas,Tienes Una Idea en Mente? Contactanos
+                  <br>
+                    Contactanos: albertomfe@gmail.com
+                    <br>
+                    Telefonos: 33-21-36-54-87
+                </p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Redes Sociales</h5>
+                <ul>
+                  <li><a target='_blank' href='https://www.facebook.com/BaulProgram/?modal=admin_todo_tour' class="grey-text text-lighten-3" href="#!">facebook</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Google Plus</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Pinteres</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2019 Copyright BaulProgram.com
+            </div>
+          </div>
+    </footer>
+
+
+
+
+
+
+
+     <!--JavaScript at end of body for optimized loading-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+     <!--  Scripts-->
+     <script src="./js/jquery.min.js"></script>
+     <script type="text/javascript" src="js/materialize.min.js"></script>
+     <script src="./js/fontawesome.min.js"></script>
+     <script src="./js/wow.js"></script>
+
+     <!-- MAIN JS  para Crear instalador-->
+     <script src="js/main.js"></script>
+     <script src="script.js"></script>
+
+
+	   <script>
+		  // Or with jQuery
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.fixed-action-btn');
+        var instances = M.FloatingActionButton.init(elems, {
+          direction: 'top',
+          hoverEnabled: false
+        });
+      });
+
+
+
+		  $(document).ready(function(){
+			$('.materialboxed').materialbox();
+		  });
+
+      /*Paralax*/
+       $(document).ready(function(){
+        $('.parallax').parallax();//iniciar paralax
+      });
+
+
+        /*tabs*/
+        $(document).ready(function(){
+          $('.tabs').tabs();
+        });
+
+        /*carrusel*/
+        $(document).ready(function(){
+           $('.carousel').carousel();
+         });
+
+
+         $(document).ready(function(){
+          $('.sidenav').sidenav();
+        });
+
+        $(document).ready(function(){
+          $('.modal').modal();
+        });
+        //new WOW().init();
+
+    </script>
+
+
+
+
+
+    </body>
+  </html>

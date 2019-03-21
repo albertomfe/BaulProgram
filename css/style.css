@@ -1,0 +1,242 @@
+/*titulos*/
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+/*subtitulos*/
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+/*frases*/
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+
+
+/*ScrolBar*/
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-button {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #800040;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #800040;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #800040;
+}
+::-webkit-scrollbar-track {
+  background: #c0c0c0;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #c0c0c0;
+}
+::-webkit-scrollbar-track:active {
+  background: #c0c0c0;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+.parallax-container
+{
+  position: relative;
+  overflow: hidden;
+  height:50vh;
+}
+
+.responsive-img
+{
+  width:100%;
+  height:300px!important;
+}
+
+.contenedor
+{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.marge-abajo
+{
+  margin-bottom: 50px;
+}
+
+.card
+{
+  min-height: 400px;
+}
+
+  .card-image
+  {
+    z-index: 10;
+    overflow: hidden;/*efecto scroll disable*/
+  }
+
+.img-paquete{
+  height: 240px;
+  z-index: 10;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+-webkit-backface-visibility: hidden;
+-webkit-perspective: 1000;
+}
+.img-paquete:hover{
+  -moz-transform: scale(1.2);
+     -webkit-transform: scale(1.2);
+     -o-transform: scale(1.2);
+     transform: scale(1.2);
+     -ms-transform: scale(1.2);
+ filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',
+     M11=1.2, M12=-0, M21=0, M22=1.2);
+
+}
+
+
+
+
+
+
+
+.precio-paquete{
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.banner
+{
+  min-height: 400px;
+  max-height: 400px;
+}
+
+.texto_verde_agua
+{
+  color:#53CCCE;
+}
+.brand-logo
+{
+  font-family: 'Pacifico', cursive;
+}
+.brand-logo::first-letter
+{
+  color:#53CCCE;
+  font-size: 45px;
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+}
+
+.texto_welcome
+{
+  font-family: 'Pacifico', cursive;
+}
+
+.subtitulo
+{
+  font-family: 'Great Vibes', cursive;
+  font-weight: 100;
+}
+
+.footer_text
+{
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+}
+.footer_text::first-letter
+{
+  color:#53CCCE;
+  font-size: 35px;
+}
+
+.encima-todo
+{
+  z-index: 99999;
+  color:#fff;
+  display: block;
+  background: rgba(0,0,0,0.5);
+  height: 80px;
+  font-size: 22px;
+  margin: auto;
+  font-family: 'Poiret One', cursive;
+  border-radius: 80px;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.titulo_mvv
+{
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+}
+
+.sin_margenes
+{
+  margin-bottom: :0;
+  padding: 0;
+}
+
+.margenes
+{
+  margin-left: 40px;;
+  margin-right:40px;
+}
+
+/*
+
+
+.carousel .carousel-item > img {
+  width: 300%;
+}*/
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+
+.carousel .carousel-item {
+  visibility: hidden;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carousel .carousel-item > img {
+  width: 100%;
+}
+
+
+
+.fixed-action-btn {
+    position: fixed;
+    left: 23px!important;
+    bottom: 23px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    z-index: 997;
+}
+
+
+.btn-floating {
+  background-color: #26a69a;
+  left: 23px!important;
+}
+
+.btn-floating:before {
+  border-radius: 0;
+}
